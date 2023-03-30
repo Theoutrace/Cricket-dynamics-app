@@ -18,6 +18,12 @@
   right: 0;
 }
 
+.hro-img-cont-div-sec-img {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
 .welcome-hero-sec-intro {
   text-align: left;
   width: 50%;

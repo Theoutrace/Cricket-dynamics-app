@@ -1,12 +1,23 @@
 import React from "react";
 import "./HeroSection.css";
-import heroImage from "./images/heroImage.png";
+import heroImage from "./images/heroImage2.jpg";
+import { Skeleton } from "@mui/material";
 
 const HeroSection = () => {
   return (
     <div className="HeroSection-outer-component">
       <div className="hro-img-cont-div-sec">
-        <img src={heroImage} alt="heroImage" />
+        {heroImage ? (
+          <img src={heroImage} alt="heroImage" />
+        ) : (
+          <Skeleton
+            className="hro-img-cont-div-sec-img "
+            variant="rounded"
+            width={400}
+            height={350}
+            style={{ margin: "20px" }}
+          />
+        )}
       </div>
       <div className="welcome-hero-sec-intro">
         <h1>
@@ -21,7 +32,6 @@ const HeroSection = () => {
           include legends of the game or up-and-coming talents, the choice is
           yours.
         </h2>
-        <button>Create Player</button>
       </div>
     </div>
   );

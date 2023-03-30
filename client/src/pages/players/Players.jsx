@@ -1,14 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { lazy, Suspense, useRef } from "react";
 import "./Players.css";
-import HomeDisplayCards from "../../components/homepage diaplay cards/HomeDisplayCards";
+const HomeDisplayCards = lazy(() =>
+  import("../../components/homepage diaplay cards/HomeDisplayCards")
+);
 import Box from "../../components/box/Box";
-import SinglePlayerInList from "./SinglePlayerInList";
+const SinglePlayerInList = lazy(() => import("./SinglePlayerInList"));
 import { useDispatch, useSelector } from "react-redux";
 import { GameActions } from "../../Store/reducers/game-reducer";
 
 const Players = () => {
   const totalPlayers = useSelector((state) => state.game.totalPlayers);
-  // console.log(totalPlayers);
   const dispatch = useDispatch();
   const playerNameRef = useRef();
   const playerSpecilityRef = useRef();
@@ -35,7 +36,6 @@ const Players = () => {
     playerNameRef.current.value = "";
     playerSpecilityRef.current.value = "";
   };
-  // console.log(totalPlayers);
 
   return (
     <div className="Players-outer-component-page">
@@ -46,44 +46,52 @@ const Players = () => {
           player.
         </p>
       </Box>
-      <HomeDisplayCards className="player-div-comp-imp-cmn-sec">
-        <Box
-          className={
-            "flex-all-player-coontainer-Players-component-page unscroll-div-container"
-          }
-        >
-          <Box className="form-container-div-player-page">
-            <form onSubmit={addplayerhandler}>
-              <input
-                placeholder="Player Name"
-                type="text"
-                ref={playerNameRef}
-              />
-              <input
-                placeholder="Specility"
-                type="text"
-                ref={playerSpecilityRef}
-              />
-              <button type="submit">+ Add Player</button>
-            </form>
-          </Box>
-        </Box>
-        {totalPlayers.length > 0 ? (
+      <Suspense fallback={<div>Player display loading...</div>}>
+        <HomeDisplayCards className="player-div-comp-imp-cmn-sec">
           <Box
-            className={`flex-all-player-coontainer-Players-component-page ${
-              totalPlayers.length > 5 && "flex-page-for-scroll"
-            }`}
+            className={
+              "flex-all-player-coontainer-Players-component-page unscroll-div-container"
+            }
           >
-            {totalPlayers.map((item) => {
-              return <SinglePlayerInList item={item} />;
-            })}
+            <Box className="form-container-div-player-page">
+              <form onSubmit={addplayerhandler}>
+                <input
+                  placeholder="Player Name"
+                  type="text"
+                  ref={playerNameRef}
+                />
+                <input
+                  placeholder="Specility"
+                  type="text"
+                  ref={playerSpecilityRef}
+                />
+                <button type="submit">+ Add Player</button>
+              </form>
+            </Box>
           </Box>
-        ) : (
-          <Box className={`flex-all-player-coontainer-Players-component-page`}>
-            <h3>No Player Available</h3>
-          </Box>
-        )}
-      </HomeDisplayCards>
+          {totalPlayers.length > 0 ? (
+            <Box
+              className={`flex-all-player-coontainer-Players-component-page ${
+                totalPlayers.length > 5 && "flex-page-for-scroll"
+              }`}
+            >
+              {totalPlayers.map((item) => {
+                return (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <SinglePlayerInList item={item} />
+                  </Suspense>
+                );
+              })}
+            </Box>
+          ) : (
+            <Box
+              className={`flex-all-player-coontainer-Players-component-page`}
+            >
+              <h3>No Player Available</h3>
+            </Box>
+          )}
+        </HomeDisplayCards>
+      </Suspense>
     </div>
   );
 };

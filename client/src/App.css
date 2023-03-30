@@ -14,3 +14,14 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.loader-container-giv-fallback {
+  margin-top: 200px;
+}
+
+.loader-container-giv-fallback-h2 {
+  color: rgb(214, 99, 99);
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 10px;
+}
