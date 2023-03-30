@@ -1,0 +1,29 @@
+.Home-outer-component {
+  padding-top: 100px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.Home-outer-component-h2 {
+  font-size: 50px;
+  font-weight: 100;
+  color: rgba(82, 77, 77, 0.74);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.give-margin-bet-cards {
+  margin-bottom: 100px;
+}
+
+.SinglePlayer-player-container-box-in-box {
+  background-color: #554bc4ce;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+}

@@ -1,0 +1,16 @@
+.SinglePlayer-outer-component {
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.SinglePlayer-outer-component h6 {
+  font-size: 16px;
+  margin: 5px;
+  color: white;
+  font-weight: 700;
+}
+.SinglePlayer-outer-component p {
+  margin: 5px;
+  color: rgb(216, 202, 202);
+  font-weight: 300;
+  font-size: 12px;
+}

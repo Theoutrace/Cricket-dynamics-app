@@ -1,0 +1,105 @@
+.Matches-outer-component {
+  padding-top: 100px;
+}
+
+.single-match-creator-pannel-in-matches-page-mid {
+  background-color: rgba(91, 196, 161, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: none;
+  margin-bottom: 50px;
+}
+
+.Box-single-match-creator-pannel-in-matches-page-mid-before-submit {
+  display: flex;
+  height: 300px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-single-match-creator-pannel-in-matches-page-mid-button {
+  height: 55px;
+  width: 60%;
+  background-color: blueviolet;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.h2-Box-single-match-creator-pannel-in-matches-page-mid-before-submit-h2 {
+  font-weight: 400;
+  color: rgb(169, 99, 216);
+  font-size: 25px;
+}
+
+.matches-homedisplay-teams-container-selector-lower-cls {
+  background-color: rgba(50, 199, 149, 0);
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: none;
+}
+
+.box-in-matches-homedisplay-teams-container-selector-lower-cls {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.Matches-outer-component-h2-on-teams-panel {
+  color: rgb(82, 77, 77);
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.matches-top-in-matches-page-for-box-containing-matches {
+  background-color: rgba(37, 172, 172, 0);
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.matches-text-headline-for-each-heading-in-matches {
+  font-weight: 400;
+  font-size: 45px;
+  color: rgb(46, 43, 43);
+  margin: 0px;
+}
+
+.box-sec-matches-top-in-matches-page-for-flex {
+  background-color: rgba(240, 248, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-sec-matches-top-in-matches-page-for-flex-h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0px;
+  color: blueviolet;
+  padding: 0px;
+}
+
+.h2-no-teams-available-lower-matches-page {
+  font-size: 25px;
+  margin: 5px;
+  padding: 0px;
+  font-weight: 400;
+  color: blueviolet;
+}

@@ -1,0 +1,5 @@
+.HomeDisplayCards-container-box-home {
+  display: flex;
+  padding: 50px 50px;
+  box-shadow: rgba(100, 100, 111, 0.219) 0px 7px 29px 0px;
+}

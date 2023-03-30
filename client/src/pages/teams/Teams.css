@@ -1,0 +1,165 @@
+.Teams-outer-component {
+  padding-top: 100px;
+  color: rgb(109, 102, 102);
+}
+
+.selector-section-in-teams-page {
+  background-color: rgba(127, 255, 212, 0);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.Teams-outer-component-h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 10px;
+  background-color: rgb(213, 219, 217);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.Teams-outer-component-p {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.HomeDisplayCards-in-teams-component {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+  /* padding: 0px; */
+}
+
+.box-under-HomeDisplayCards-in-teams-component-box-for-form {
+  background-color: rgba(23, 26, 185, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.box-under-HomeDisplayCards-in-teams-component-box-for-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* align-items: flex-start; */
+}
+
+.box-under-HomeDisplayCards-in-teams-component-box-for-form form input {
+  width: 20%;
+  margin: 10px;
+  margin-bottom: 2px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(116, 107, 107, 0.158);
+  padding-left: 10px;
+  color: blue;
+}
+.box-under-HomeDisplayCards-in-teams-component-box-for-form form input:focus {
+  outline: none;
+}
+
+.box-under-HomeDisplayCards-in-teams-component-box-for-form form button {
+  /* width: 100%; */
+  margin: 10px;
+  margin-top: 20px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.player-bucket-right-in-teams-cmp-nnt {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: hidden;
+  background-color: rgb(222, 250, 238);
+}
+
+.player-bucket-right-in-teams-cmp-nnt h6 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.add-to-scroll-bucket {
+  overflow-y: scroll;
+  max-height: 400px;
+  min-height: 400px;
+  padding: 10px;
+}
+
+.h2-all-player-txt {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.teams-container-aft-creation-in-teams-page-outer {
+  background-color: rgba(0, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 400px;
+  margin-bottom: 50px;
+  box-shadow: none;
+  padding: 0px;
+}
+
+.teams-container-aft-creation-in-teams-page-outer-h2 {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(73, 71, 71);
+  margin: 0px;
+}
+
+.box-all-teams-container-aft-creation-in-teams-page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(219, 228, 235, 0.603);
+  padding: 30px;
+  background: rgb(227, 33, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 33, 33, 0.2638305322128851) 0%,
+    rgba(226, 79, 79, 0.29744397759103647) 35%,
+    rgba(8, 0, 255, 0.1741946778711485) 100%
+  );
+}
+
+.box-all-teams-container-aft-creation-in-teams-page h2 {
+  font-size: 25px;
+  margin: 10px;
+  font-weight: 400;
+  color: rgb(216, 77, 77);
+}
+
+.box-all-teams-container-aft-creation-in-teams-page p {
+  margin: 0px;
+}

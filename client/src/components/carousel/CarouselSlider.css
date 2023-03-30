@@ -1,0 +1,20 @@
+.Carousel-cls-in-slider-home-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin-left: 50px;
+}
+
+.left-arrow-to-be-rotated {
+  transform: rotate(180deg);
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.left-arrow-to-be-designed {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+}

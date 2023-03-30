@@ -1,0 +1,75 @@
+.HomeDisplayCards-home-for-special-add {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.HomeDisplayCards-home-for-special-add-button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #121213;
+}
+
+.all-player-container-box-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(190, 57, 57, 0);
+}
+
+.SinglePlayer-player-container-box-in-box {
+  background-color: #554bc4ce;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+.allplayer-number-container-box-home {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.allplayer-number-container-box-home h3 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 10px;
+}
+.allplayer-number-container-box-home h2 {
+  font-size: 50px;
+  margin: 5px;
+}
+
+.teams-cls-for-total-cls-add {
+  background-color: #cd893538;
+  border-radius: 35px;
+}
+
+.matches-cls-for-total-cls-add {
+  background-color: #fd634c36;
+  border-radius: 50%;
+}
+
+.teams-single-item-cls-for-total-cls-add {
+  background-color: #6e0174c2;
+  border-radius: 50%;
+}
+
+.matches-single-item-cls-for-total-cls-add {
+  background-color: #1b35debd;
+  border-radius: 50%;
+}

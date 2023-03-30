@@ -1,0 +1,39 @@
+.left-mobile-menu-drager-btn {
+  width: 30px;
+}
+.logo-text-hdr-cntnr {
+  background-color: rgba(127, 255, 212, 0);
+  font-size: 25px;
+  color: rgb(214, 78, 78);
+  text-transform: capitalize;
+}
+
+.logo-header-ballIcon-img {
+  width: 50px;
+  margin-right: 8px;
+  transform: rotate(-20deg);
+}
+
+.flext-icon-phone-size {
+  height: 30px;
+  width: 35px;
+}
+
+.flex-text-hdr-phone-small-dev {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.active {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(185, 71, 71);
+}
+
+.inActive {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(82, 76, 76);
+}
